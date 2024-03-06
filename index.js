@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 function carNameGenerator(req, res, next) {
   console.log(req.body);
-  carName = req.body["street"] + "-" + req.body["pet"];
+  carName = req.body["brand"] + "-" + req.body["modal"];
   next();
 }
 
